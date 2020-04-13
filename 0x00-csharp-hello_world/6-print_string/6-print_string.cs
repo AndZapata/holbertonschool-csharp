@@ -5,16 +5,8 @@ class Program
     static void Main(string[] args)
     {
         string str = "Holberton School";
-	for (int i = 0; i < 4; i++)
-	{
-	    if (i < 3)
-	    {
-                Console.Write("{0}", str);
-            }
-	    else if (i == 3)
-	    {
-	        Console.Write("\n{0}\n", str.Substring(0, 9));
-            }
-        }
+        string str2 = str + str + str;
+	Console.WriteLine("{0}", str2);
+	Console.WriteLine(str.Substring(0, 9));
     }
 }
