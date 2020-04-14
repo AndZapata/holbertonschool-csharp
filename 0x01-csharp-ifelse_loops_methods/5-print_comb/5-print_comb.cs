@@ -13,7 +13,7 @@ class Program
             }
 	    else
 	    {
-	        Console.Write("{0:d2}", number);
+	        Console.Write("{0:d2}\n", number);
             }
         }
     }
