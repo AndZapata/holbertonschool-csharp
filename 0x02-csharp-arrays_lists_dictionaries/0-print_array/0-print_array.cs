@@ -9,9 +9,11 @@ class Array
 	if (size < 0)
 	{
 	    Console.WriteLine("Size cannot be negative");
-            return null;
+            return (null);
         }
 	index = new int[size];
+        if (size == 0)
+	    return index;
         for (i = 0; i < size; i++)
 	{
             index[i] = i;
