@@ -13,7 +13,10 @@ class Array
         }
 	index = new int[size];
         if (size == 0)
+	{
+	    Console.Write("\n");
 	    return index;
+        }
         for (i = 0; i < size; i++)
 	{
             index[i] = i;
