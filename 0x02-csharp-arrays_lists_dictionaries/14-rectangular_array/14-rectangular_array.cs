@@ -10,11 +10,12 @@ class Program
 	    for (j = 0; j < 5; j++)
 	    {
 	        if (j == 2 && i == 2)
-		    Console.Write(num + 1);
+		    Console.Write("{0} ", num + 1);
+		else if (j < 4)
+	            Console.Write("{0} ", num);
 		else
-	            Console.Write(num);
+		    Console.Write("{0}\n", num);
             }
-	    Console.WriteLine();
         }
     }
 }
