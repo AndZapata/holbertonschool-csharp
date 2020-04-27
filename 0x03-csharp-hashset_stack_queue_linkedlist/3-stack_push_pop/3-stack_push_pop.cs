@@ -13,7 +13,8 @@ class MyStack
             Console.WriteLine("Stack is empty");
         Console.WriteLine("Stack contains {0}: {1}", search, flag);
         if (flag)
-            while (aStack.Pop() != search);        
+            while (aStack.Pop() != search)
+            {}        
         aStack.Push(newItem);
         
         return aStack;
