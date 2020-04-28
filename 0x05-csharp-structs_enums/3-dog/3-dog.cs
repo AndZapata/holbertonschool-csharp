@@ -1,9 +1,26 @@
 ﻿using System;
 
-class Program
+public enum Rating
 {
-    static void Main(string[] args)
+    Good,
+    Great,
+    Excellent
+}
+
+public struct Dog
+{
+    public string name;
+    public float age;
+    public string owner;
+    public Rating rating;
+
+    public Dog(string myName, float myAge, string myOwner, Rating myRating)
     {
-        Console.WriteLine("Hello World!");
+        name = myName;
+        age = myAge;
+        owner = myOwner;
+        rating = myRating;
     }
+
+    public override string ToString() => $"Dog Name: {name}\nAge: {age}\nOwner: {owner}\nRating: {rating}";
 }
