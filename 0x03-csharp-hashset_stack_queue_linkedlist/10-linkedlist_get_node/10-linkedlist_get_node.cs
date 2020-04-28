@@ -14,6 +14,6 @@ class LList
                 return i;
             idx += 1;
         }
-        return idx;
+        return 0;
     }
 }
