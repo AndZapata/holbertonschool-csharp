@@ -4,6 +4,6 @@ class Except
 {
     public static void ThrowMsg(string msg)
     {
-        Console.WriteLine("Hello World!");
+        throw new System.ArgumentException(msg);
     }
 }
