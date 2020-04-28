@@ -7,9 +7,9 @@ class Int
         int div = 0;
         try
         {
-            div = a / b;
+            div = (a / b);
         }
-        catch (DivideByZeroException e)
+        catch (DivideByZeroException)
         {
             Console.WriteLine("Cannot divide by zero");
         }
