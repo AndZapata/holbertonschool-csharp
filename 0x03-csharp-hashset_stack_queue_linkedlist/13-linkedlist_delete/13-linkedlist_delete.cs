@@ -5,15 +5,14 @@ class LList
 {
     public static void Delete(LinkedList<int> myLList, int index)
     {
-        if (myLList.Count > 0)
+        int i = 0;
+        LinkedListNode<int> current = myLList.First;
+        while (i <= index && current.Next != null)
         {
-            LinkedListNode<int> current = myLList.First;
-            for (int i = 0; i <= index && current.Next != null; i++)
-            {
-                if (i == index)
-                    myLList.Remove(current);
-                current = current.Next;
-            }
+            if (i == index)
+                myLList.Remove(current);
+            current = current.Next;
+            i += 1;
         }
     }
 }
