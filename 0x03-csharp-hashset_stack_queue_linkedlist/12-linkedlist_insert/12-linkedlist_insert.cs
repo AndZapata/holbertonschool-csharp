@@ -9,7 +9,7 @@ class LList
 
         if (myLList.First == null || myLList.First.Value >= newNode.Value)
         {
-            myLList.AddLast(newNode);
+            myLList.AddFirst(newNode);
             return newNode;
         }
         LinkedListNode<int> current = myLList.First;
