@@ -1,9 +1,16 @@
 ﻿using System;
 
-class Program
+public enum Rating
 {
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello World!");
-    }
+    Good,
+    Great,
+    Excellent
+}
+
+public struct Dog
+{
+    public string name;
+    public float age;
+    public string owner;
+    public Rating rating;
 }
