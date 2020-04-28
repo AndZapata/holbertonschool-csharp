@@ -5,8 +5,6 @@ class LList
 {
     public static int GetNode(LinkedList<int> myLList, int n)
     {
-        if (n > myLList.Count)
-            return 0;
         int idx = 0;
         foreach (int i in myLList)
         {
