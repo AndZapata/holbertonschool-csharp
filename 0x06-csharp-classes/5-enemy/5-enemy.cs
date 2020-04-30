@@ -32,6 +32,6 @@ namespace Enemies
             return health;
         }
         /// <summary>public method toString() for overring the string object</summary>
-        public override string ToString() => $"Zombie name: {Name} / Total Health: {health}";
+        public override string ToString() => $"Zombie Name: {name} / Total Health: {health}";
     }
 }
