@@ -6,7 +6,7 @@ namespace Enemies
     public class Zombie
     {
         /// <summary>How many healt has the zombie</summary>
-        public int health;
+        int health;
         /// <summary>Constructor for the healt of the zombie</summary>
         public Zombie()
         {
@@ -18,6 +18,11 @@ namespace Enemies
             if (value < 0)
                 throw new ArgumentException("Health must be greater than or equal to 0");
             health = value;
+        }
+        /// <summary>public method, returns the value of the healt</summary>
+        public int GetHealth()
+        {
+            return health;
         }
     }
 }
