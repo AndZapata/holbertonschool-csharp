@@ -37,5 +37,12 @@ namespace Text.Tests
             int result = Str.CamelCase(s);
             Assert.AreEqual(1, result);
         }
+        [Test]
+        public void twoWordsUnionCase()
+        {
+            string s = "someWords To Read";
+            int result = Str.CamelCase(s);
+            Assert.AreEqual(4, result);
+        }
     }
 }

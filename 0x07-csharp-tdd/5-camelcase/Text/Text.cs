@@ -16,8 +16,11 @@ namespace Text
         {
             if (s.Length == 0)
                 return 0;
-            string[] newS = s.Split(' ');
-            return newS.Length;
+            int count = 1;
+            for (int i = 0; i < s.Length; i++)
+                if (s[i] >= 'A' && s[i] <= 'Z')
+                    count += 1;
+            return count;
         }
     }
 }
