@@ -52,5 +52,26 @@ namespace MyMath.Tests
             int result = Operations.Max(nums);
             Assert.AreEqual(4056, result);
         }
+        [Test]
+        public void equalMaxIntegersList()
+        {
+            List<int> nums = new List<int> {2, 3, 4, 2, 5, 3, 5, 1024, 1024};
+            int result = Operations.Max(nums);
+            Assert.AreEqual(1024, result);
+        }
+        [Test]
+        public void sameNumMaxIntegersList()
+        {
+            List<int> nums = new List<int> {4, 4, 4, 4};
+            int result = Operations.Max(nums);
+            Assert.AreEqual(4, result);
+        }
+        [Test]
+        public void oneMaxIntegersList()
+        {
+            List<int> nums = new List<int> {0};
+            int result = Operations.Max(nums);
+            Assert.AreEqual(0, result);
+        }
     }
 }
