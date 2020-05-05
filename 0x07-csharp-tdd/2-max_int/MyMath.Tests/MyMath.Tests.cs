@@ -45,5 +45,12 @@ namespace MyMath.Tests
             int result = Operations.Max(nums);
             Assert.AreEqual(0, result);
         }
+        [Test]
+        public void MaxIntSortList()
+        {
+            List<int> nums = new List<int> {-8, -4, -2, 0, 1, 3, 80, 99, 1024, 2048, 4056};
+            int result = Operations.Max(nums);
+            Assert.AreEqual(4056, result);
+        }
     }
 }
