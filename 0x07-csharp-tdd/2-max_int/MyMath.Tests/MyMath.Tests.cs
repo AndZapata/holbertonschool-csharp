@@ -13,7 +13,7 @@ namespace MyMath.Tests
         [Test]
         public void emptyList()
         {
-            List<int> nums = null;
+            List<int> nums = List<int>();
             int result = Operations.Max(nums);
             Assert.AreEqual(0, result);
         }
@@ -69,9 +69,16 @@ namespace MyMath.Tests
         [Test]
         public void oneMaxIntegersList()
         {
-            List<int> nums = new List<int> {0};
+            List<int> nums = new List<int> {9};
             int result = Operations.Max(nums);
-            Assert.AreEqual(0, result);
+            Assert.AreEqual(9, result);
+        }
+        [Test]
+        public void oneMaxNegativeIntegerList()
+        {
+            List<int> nums = new List<int> {-4};
+            int result = Operations.Max(nums);
+            Assert.AreEqual(-4, result);
         }
     }
 }

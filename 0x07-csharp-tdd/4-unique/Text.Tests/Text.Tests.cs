@@ -50,7 +50,6 @@ namespace Text.Tests
             string s = "abbccdd";
             int result = Str.UniqueChar(s);
             Assert.AreEqual(0, result);
-        }
-        
+        }       
     }
 }
