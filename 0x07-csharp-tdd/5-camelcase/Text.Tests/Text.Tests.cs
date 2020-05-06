@@ -44,5 +44,12 @@ namespace Text.Tests
             int result = Str.CamelCase(s);
             Assert.AreEqual(4, result);
         }
+        [Test]
+        public void isNullCase()
+        {
+            string s = null;
+            int result = Str.CamelCase(s);
+            Assert.AreEqual(0, result);
+        }
     }
 }

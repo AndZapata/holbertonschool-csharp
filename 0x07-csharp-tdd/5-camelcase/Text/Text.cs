@@ -14,7 +14,7 @@ namespace Text
         /// <returns>The count of the words</returns>
         public static int CamelCase(string s)
         {
-            if (s.Length == 0)
+            if (String.IsNullOrEmpty(s))
                 return 0;
             int count = 1;
             for (int i = 0; i < s.Length; i++)
