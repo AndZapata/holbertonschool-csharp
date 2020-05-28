@@ -8,9 +8,9 @@ class MatrixMath
         double[,] matrix2;
         double operations;
         double[,] result = new double[2, 2];
-        if (direction == 'X' || direction == 'Y')
+        if (direction == 'x' || direction == 'y')
         {
-            if (direction == 'X')
+            if (direction == 'x')
                 matrix2 = new double[,] {{1, 0}, {factor, 1}};
             else
                 matrix2 = new double[,] {{1, factor}, {0, 1}};
