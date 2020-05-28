@@ -5,7 +5,7 @@ class MatrixMath
     public static double[,] Rotate2D(double[,] matrix, double angle)
     {
         double[,] fail = new double[,] { { -1 } };
-        double[,] matrix2 = new double[,] {{Math.Cos(angle), -1 * Math.Sin(angle)}, {Math.Sin(angle), Math.Cos(angle)}};
+        double[,] matrix2 = new double[,] {{Math.Cos(angle), Math.Sin(angle)}, {-1 * Math.Sin(angle), Math.Cos(angle)}};
         double operations;
         double[,] result = new double[2, 2];
         
