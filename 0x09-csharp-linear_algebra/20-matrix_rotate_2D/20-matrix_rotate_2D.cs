@@ -9,7 +9,7 @@ class MatrixMath
         double operations;
         double[,] result = new double[2, 2];
         
-        if (matrix.GetLength(0) != 2 && matrix.GetLength(1) != 2)
+        if (matrix.GetLength(0) != 2 || matrix.GetLength(1) != 2)
             return fail;
         
         for (int i = 0; i < 2; i++)
