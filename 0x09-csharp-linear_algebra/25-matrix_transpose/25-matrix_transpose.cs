@@ -8,9 +8,9 @@ class MatrixMath
         double[,] result;
         if (matrix.GetLength(0) == 0)
             return empty;
-        result = new double[matrix.GetLength(0),matrix.GetLength(1)];
-        for (int i = 0; i < 2; i++)
-            for (int j = 0; j < 2; j++)
+        result = new double[matrix.GetLength(1), matrix.GetLength(0)];
+        for (int i = 0; i < matrix.GetLength(1); i++)
+            for (int j = 0; j < matrix.GetLength(0); j++)
                 result[i, j] = matrix[j, i];
         
         return result;
