@@ -5,7 +5,7 @@ class MatrixMath
     public static double[,] Multiply(double[,] matrix1, double[,] matrix2)
     {
         double[,] fail = new double[,] { { -1 } };
-        if (matrix1.GetLength(0) != matrix2.GetLength(1))
+        if (matrix1.GetLength(1) != matrix2.GetLength(0))
             return fail;
         double[,] result = new double[matrix1.GetLength(0), matrix1.GetLength(1)];
         double operations = 0;
