@@ -17,7 +17,7 @@ class MatrixMath
             {
                 operations = 0;
                 for (int k = 0; k < 2; k++)
-                    operations = operations + Math.Round((matrix[i, k] * matrix2[k, j]), 2);
+                    operations = Math.Round(operations + (matrix[i, k] * matrix2[k, j]), 2);
                 result[i, j] = operations;
             }
         
