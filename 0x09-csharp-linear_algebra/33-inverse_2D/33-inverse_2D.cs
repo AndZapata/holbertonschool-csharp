@@ -2,6 +2,11 @@
 
 class MatrixMath
 {
+    /// <summary>
+    /// Function to build the inverse of a 2D matrix
+    /// </summary>
+    /// <param name="matrix"></param>
+    /// <returns>new matrix</returns>
     public static double[,] Inverse2D(double[,] matrix)
     {
         double divDet = 1 / Determinant(matrix);
@@ -17,6 +22,11 @@ class MatrixMath
         return result;
     }
 
+    /// <summary>
+    /// Function to obtain the determinant of a 2D matrix
+    /// </summary>
+    /// <param name="matrix"></param>
+    /// <returns>double type determinant</returns>
     public static double Determinant(double[,] matrix)
     {
         double result = 0;
@@ -28,6 +38,11 @@ class MatrixMath
         return -1;
     }
     
+    /// <summary>
+    /// Function to transpose a matrix
+    /// </summary>
+    /// <param name="matrix"></param>
+    /// <returns>new matrix</returns>
     public static double[,] Transpose(double[,] matrix)
     {
         double[,] empty = new double[,] { { } };
