@@ -12,17 +12,21 @@ class MatrixMath
     /// <returns>new matrix</returns>
     public static double[,] Inverse2D(double[,] matrix)
     {
-        double divDet = 1 / Determinant(matrix);
+        double det = Determinant(matrix);
         double [,] fail = new double[,] { { -1 } };
         double [,] result = new double[2, 2];
         double [,] trasn = Transpose(matrix);
         
-        if (matrix.GetLength(0) != 2 || matrix.GetLength(1) != 2)
+        if (matrix.GetLength(0) != 2 || matrix.GetLength(1) != 2 || det == 0)
             return fail;
-        for (int i = 0; i < 2; i++)
-            for (int j = 0; j < 2; j++)
-                result[i, j] = Math.Round(divDet * trasn[i, j], 2);
-        return result;
+        else
+        {
+            double divDet = 1 / det;
+            for (int i = 0; i < 2; i++)
+                for (int j = 0; j < 2; j++)
+                    result[i, j] = Math.Round(divDet * trasn[i, j], 2);
+            return result;
+        }
     }
 
     /// <summary>
