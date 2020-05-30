@@ -1,7 +1,15 @@
 ﻿using System;
 
+/// <summary>
+/// Matrix Math
+/// </summary>
 class MatrixMath
 {
+    /// <summary>
+    /// function that returns the Determinant of a matrix 
+    /// </summary>
+    /// <param name="matrix"></param>
+    /// <returns>double single number</returns>
     public static double Determinant(double[,] matrix)
     {
         double result = 0;

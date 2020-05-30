@@ -1,7 +1,16 @@
 ﻿using System;
 
+/// <summary>
+/// matrix math class
+/// </summary>
 class MatrixMath
 {
+    /// <summary>
+    /// function to add two matrix
+    /// </summary>
+    /// <param name="matrix1"></param>
+    /// <param name="matrix2"></param>
+    /// <returns>a new matrix</returns>
     public static double[,] Add(double[,] matrix1, double[,] matrix2)
     {
         double[,] fail = new double[,] { { -1 } };

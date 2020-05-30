@@ -1,7 +1,16 @@
 ﻿using System;
 
+/// <summary>
+/// Class vector Math
+/// </summary>
 class VectorMath
 {
+    /// <summary>
+    /// Funtion to find the cross product
+    /// </summary>
+    /// <param name="vector1"></param>
+    /// <param name="vector2"></param>
+    /// <returns>a new vector</returns>
     public static double[] CrossProduct(double[] vector1, double[] vector2)
     {
         double[] fail = new double[]{-1};

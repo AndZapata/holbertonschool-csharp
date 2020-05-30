@@ -1,7 +1,16 @@
 ﻿using System;
 
+/// <summary>
+/// Matrix Math class
+/// </summary>
 class MatrixMath
 {
+    /// <summary>
+    /// Function to rotate a 2d matrix
+    /// </summary>
+    /// <param name="matrix"></param>
+    /// <param name="angle"></param>
+    /// <returns>a new matrix</returns>
     public static double[,] Rotate2D(double[,] matrix, double angle)
     {
         double[,] fail = new double[,] { { -1 } };

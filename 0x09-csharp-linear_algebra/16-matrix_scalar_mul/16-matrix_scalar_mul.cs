@@ -1,7 +1,16 @@
 ﻿using System;
 
+/// <summary>
+/// Matrix Math class
+/// </summary>
 class MatrixMath
 {
+    /// <summary>
+    /// function to multiply a matrix by a scalar
+    /// </summary>
+    /// <param name="matrix"></param>
+    /// <param name="scalar"></param>
+    /// <returns>a new matrix</returns>
     public static double[,] MultiplyScalar(double[,] matrix, double scalar)
     {
         double[,] fail = new double[,] { { -1 } };

@@ -1,7 +1,16 @@
 ﻿using System;
 
+/// <summary>
+/// Matrix Math class
+/// </summary>
 class MatrixMath
 {
+    /// <summary>
+    /// function to multiply two matrix
+    /// </summary>
+    /// <param name="matrix1"></param>
+    /// <param name="matrix2"></param>
+    /// <returns>a new matrix</returns>
     public static double[,] Multiply(double[,] matrix1, double[,] matrix2)
     {
         double[,] fail = new double[,] { { -1 } };

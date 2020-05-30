@@ -1,7 +1,16 @@
 ﻿using System;
 
+/// <summary>
+/// Vector math class
+/// </summary>
 class VectorMath
 {
+    /// <summary>
+    /// function to find the dot product of two vector
+    /// </summary>
+    /// <param name="vector1"></param>
+    /// <param name="vector2"></param>
+    /// <returns>a new vector</returns>
     public static double DotProduct(double[] vector1, double[] vector2)
     {
         double fail = -1;

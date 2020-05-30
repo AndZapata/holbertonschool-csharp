@@ -1,7 +1,15 @@
 ﻿using System;
 
+/// <summary>
+/// MatrixMath class
+/// </summary>
 class MatrixMath
 {
+    /// <summary>
+    /// Function to check the transpose of a matrix
+    /// </summary>
+    /// <param name="matrix"></param>
+    /// <returns>a new matrix</returns>
     public static double[,] Transpose(double[,] matrix)
     {
         double[,] empty = new double[,] { { } };

@@ -1,7 +1,17 @@
 ﻿using System;
 
+/// <summary>
+/// MatrixMath class
+/// </summary>
 class MatrixMath
 {
+    /// <summary>
+    /// function to shear a 2d matrix
+    /// </summary>
+    /// <param name="matrix"></param>
+    /// <param name="direction"></param>
+    /// <param name="factor"></param>
+    /// <returns>a new matrix</returns>
     public static double[,] Shear2D(double[,] matrix, char direction, double factor)
     {
         double[,] fail = new double[,] { { -1 } };
