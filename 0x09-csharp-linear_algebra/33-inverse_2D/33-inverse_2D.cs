@@ -1,5 +1,8 @@
 ﻿using System;
 
+/// <summary>
+/// matrix class math
+/// </summary>
 class MatrixMath
 {
     /// <summary>
