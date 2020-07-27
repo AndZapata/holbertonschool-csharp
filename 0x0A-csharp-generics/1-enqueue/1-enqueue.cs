@@ -18,39 +18,39 @@ class Queue<T>
     /// Class Node inside queue class
     /// </summary>
     public class Node
-	{
-		T value;
-		public Node next = null;
-		public Node(T value)
 		{
-			this.value = value;
+			T value;
+			public Node next = null;
+			public Node(T value)
+			{
+				this.value = value;
+			}
 		}
-	}
-	public Node head;
-	public Node tail;
-	int count = 0;
+		public Node head;
+		public Node tail;
+		int count = 0;
     
     /// <summary>   
-	/// Adds a  new node to the end of the queue.
-	/// </summary>
-	/// <param name="value">The value to be added in a new node</param>
-	public void Enqueue(T value)
-	{
-		Node node = new Node(value);
+		/// Adds a  new node to the end of the queue.
+		/// </summary>
+		/// <param name="value">The value to be added in a new node</param>
+		public void Enqueue(T value)
+		{
+			Node node = new Node(value);
 
-		if (this.head == null)
-			this.head = node;
-		if (this.tail != null)
-			this.tail.next = node;
-		this.tail = node;
-		this.count++;
-	}
+			if (this.head == null)
+				this.head = node;
+			if (this.tail != null)
+				this.tail.next = node;
+			this.tail = node;
+			this.count++;
+		}
 
-	/// <summary>
-	/// Returns the number of nodes in a queue.
-	/// </summary>
-	public int Count()
-	{
-		return this.count;
-	}
+		/// <summary>
+		/// Returns the number of nodes in a queue.
+		/// </summary>
+		public int Count()
+		{
+			return this.count;
+		}
 }
