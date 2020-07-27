@@ -20,7 +20,7 @@ class Queue<T>
     /// </summary>
     public class Node
     {
-        T value;
+        public T value;
         public Node next = null;
         public Node(T val)
         {
