@@ -19,24 +19,24 @@ class Queue<T>
     /// </summary>
     public class Node
     {
-        T value;
+        public T value;
         public Node next = null;
-        public Node(T value)
+        public Node(T val)
         {
-            this.value = value;
+            this.value = val;
         }
     }
     public Node head;
     public Node tail;
-    int count = 0;
+    public int count = 0;
 
     /// <summary>
     /// Adds a  new node to the end of the queue.
     /// </summary>
-    /// <param name="value">The value to be added in a new node</param>
-    public void Enqueue(T value)
+    /// <param name="val">The value to be added in a new node</param>
+    public void Enqueue(T val)
     {
-        Node node = new Node(value);
+        Node node = new Node(val);
 
         if (this.head == null)
             this.head = node;
@@ -53,4 +53,22 @@ class Queue<T>
     {
         return this.count;
     }
+
+    /// <summary>
+    /// Removes the first node in the queue
+    /// </summary>
+    /// <returns> returns its value </returns>
+    public T Dequeue()
+	{
+		if (this.head == null)
+		{
+			Console.WriteLine("Queue is empty");
+			return default(T);
+		}
+        Node current;
+		current = this.head;
+		this.head = current.next;
+		count--;
+		return current.value;
+	}
 }
