@@ -1,12 +1,17 @@
 ﻿using System;
 
-namespace _4_print
+/// <summary>
+/// Clase Queue Does not inherit from anything
+/// </summary>
+/// <typeparam name="T">param type</typeparam>
+class Queue<T>
 {
-    class Program
+    /// <summary>
+    /// Function to check the type of a param
+    /// </summary>
+    /// <returns>The type of the param</returns>
+    public Type CheckType()
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        return typeof(T);
     }
 }
