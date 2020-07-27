@@ -47,7 +47,7 @@ class Queue<T>
 	}
 
 	/// <summary>
-	/// Returns the number of nodes in a list.
+	/// Returns the number of nodes in a queue.
 	/// </summary>
 	public int Count()
 	{
