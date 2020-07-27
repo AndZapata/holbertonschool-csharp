@@ -1,4 +1,4 @@
-# 0x09-csharp-linear_algebra
+# 0x0A-csharp-generics
 
 ## This is a project from Holberton School
 
