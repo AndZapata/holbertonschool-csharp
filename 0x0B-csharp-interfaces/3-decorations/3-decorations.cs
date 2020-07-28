@@ -75,16 +75,16 @@ public class Decoration : Base, IInteractive, IBreakable
     /// <summary>
     /// Constructor to set the vars name, durability, and isQuestItem
     /// </summary>
-    /// <param name="n">name</param>
-    /// <param name="d">durability</param>
-    /// <param name="iQI">isQuestItem</param>
-    public Decoration(string n = "Decoration", int d = 1, bool iQI = false)
+    /// <param name="name">name</param>
+    /// <param name="durability">durability</param>
+    /// <param name="isQuestItem">isQuestItem</param>
+    public Decoration(string name = "Decoration", int durability = 1, bool isQuestItem = false)
     {
-        if (d <= 0)
+        if (durability <= 0)
             throw new Exception("Durability must be greater than 0");
-        this.name = n;
-        this.durability = d;
-        this.isQuestItem = iQI;
+        this.name = name;
+        this.durability = durability;
+        this.isQuestItem = isQuestItem;
     }
     /// <summary>
     /// interact with an object
