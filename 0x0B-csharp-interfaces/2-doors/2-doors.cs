@@ -36,11 +36,25 @@ interface ICollectable
     void Collect();
 }
 
-class Door : Base, IInteractive, IBreakable, ICollectable
+/// <summary>
+/// Class Door that inherits from base and Iinteractive
+/// </summary>
+public class Door : Base, IInteractive
 {
-    public int durability { get; set; }
-    public bool isCollected { get; set; }
-    public void Interact(){}
-    public void Break(){}
-    public void Collect(){}
+    /// <summary>
+    /// Door constructor to set the name variable
+    /// </summary>
+    /// <param name="n">param to set the name var</param>
+    public Door(string n = "Door")
+    {
+        name = n;
+    }
+    /// <summary>
+    /// prints when interacts
+    /// </summary>
+    public void Interact()
+    {
+        Console.WriteLine("You try to open the {0}. It's locked.", name);
+    }
+    
 }
