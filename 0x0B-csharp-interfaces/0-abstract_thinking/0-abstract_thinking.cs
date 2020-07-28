@@ -3,8 +3,11 @@
 /// <summary>
 /// Abstract class Base
 /// </summary>
-abstract class Base
+public abstract class Base
 {
+  /// <summary>
+  /// given name of the object
+  /// </summary>
   public string name;
 
   /// <summary>
