@@ -81,7 +81,7 @@ public class Decoration : Base, IInteractive, IBreakable
     public Decoration(string n = "Decoration", int d = 1, bool iQI = false)
     {
         if (d <= 0)
-            throw new ArgumentException("Durability must be greater than 0");
+            throw new Exception("Durability must be greater than 0");
         name = n;
         durability = d;
         isQuestItem = iQI;
