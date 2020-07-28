@@ -47,7 +47,7 @@ public class Door : Base, IInteractive
     /// <param name="n">param to set the name var</param>
     public Door(string n = "Door")
     {
-        name = n;
+        this.name = n;
     }
     /// <summary>
     /// prints when interacts
@@ -82,9 +82,9 @@ public class Decoration : Base, IInteractive, IBreakable
     {
         if (d <= 0)
             throw new Exception("Durability must be greater than 0");
-        name = n;
-        durability = d;
-        isQuestItem = iQI;
+        this.name = n;
+        this.durability = d;
+        this.isQuestItem = iQI;
     }
     /// <summary>
     /// interact with an object
