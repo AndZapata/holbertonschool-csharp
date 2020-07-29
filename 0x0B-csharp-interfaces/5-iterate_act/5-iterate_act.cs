@@ -150,8 +150,16 @@ public class Key : Base, ICollectable
     }
 }
 
+/// <summary>
+/// Public class RoomObjects
+/// </summary>
 public class RoomObjects
 {
+    /// <summary>
+    /// Function to check a list of items in a room a proceed acording to its type
+    /// </summary>
+    /// <param name="roomObjects"> the list of items </param>
+    /// <param name="type"> the type of the elements </param>
     public static void IterateAction(List<Base> roomObjects, Type type)
     {
         foreach (Base item in roomObjects)
