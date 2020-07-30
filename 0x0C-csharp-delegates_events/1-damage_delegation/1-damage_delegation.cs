@@ -1,12 +1,37 @@
 ﻿using System;
 
-namespace _1_damage_delegation
+/// <summary>
+/// Class Player
+/// </summary>
+public class Player
 {
-    class Program
+    private string name;
+    private float maxHp;
+    private float hp;
+
+    /// <summary>
+    /// Player constructor to set values
+    /// </summary>
+    /// <param name="name">Name of the player</param>
+    /// <param name="maxHp">The maximum of health</param>
+    public Player(string name = "Player", float maxHp = 100f)
     {
-        static void Main(string[] args)
+        if (maxHp <= 0f)
         {
-            Console.WriteLine("Hello World!");
+            this.maxHp = 100f;
+            Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
         }
+        else
+            this.maxHp = maxHp;
+        this.hp = maxHp;
+        this.name = name;
+    }
+
+    /// <summary>
+    /// Method to print default values
+    /// </summary>
+    public void PrintHealth()
+    {
+        Console.WriteLine($"{this.name} has {this.hp} / {this.maxHp} health");
     }
 }
