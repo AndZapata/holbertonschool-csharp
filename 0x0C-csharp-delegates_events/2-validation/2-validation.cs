@@ -41,11 +41,11 @@ public class Player
     /// <param name="damage"> how many damage the player takes</param>
     public void TakeDamage(float damage)
     {
-        
+        float status = this.hp;
         if (damage < 0f)
             damage = 0f;
         Console.WriteLine($"{this.name} takes {damage} damage!");
-        float status = this.hp - damage;
+        status -= damage;
         this.ValidateHP(status);
     }
 
@@ -55,11 +55,11 @@ public class Player
     /// <param name="heal">How many heal the player takes</param>
     public void HealDamage(float heal)
     {
-        
+        float status = this.hp;
         if (heal < 0f)
             heal = 0f;
         Console.WriteLine($"{this.name} heals {heal} HP!");
-        float status = this.hp + heal;
+        status += heal;
         this.ValidateHP(status);
     }
 
@@ -71,7 +71,7 @@ public class Player
     {
         if (newHp < 0f)
             this.hp = 0f;
-        if (newHp > this.maxHp)
+        else if (newHp > this.maxHp)
             this.hp = this.maxHp;
         else
             this.hp = newHp;
