@@ -46,7 +46,7 @@ public class Player
             damage = 0f;
         Console.WriteLine($"{this.name} takes {damage} damage!");
         status -= damage;
-        ValidateHP(status);
+        this.ValidateHP(status);
     }
 
     /// <summary>
@@ -60,7 +60,7 @@ public class Player
             heal = 0f;
         Console.WriteLine($"{this.name} heals {heal} HP!");
         status += heal;
-        ValidateHP(status);
+        this.ValidateHP(status);
     }
 
     /// <summary>
