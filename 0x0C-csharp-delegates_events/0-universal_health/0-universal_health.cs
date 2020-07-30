@@ -23,7 +23,7 @@ public class Player
         }
         else
             this.maxHp = maxHp;
-        this.hp = maxHp;
+        this.hp = this.maxHp;
         this.name = name;
     }
 
@@ -32,6 +32,6 @@ public class Player
     /// </summary>
     public void PrintHealth()
     {
-        Console.WriteLine($"{name} has {hp} / {maxHp} health");
+        Console.WriteLine($"{this.name} has {this.hp} / {this.maxHp} health");
     }
 }
