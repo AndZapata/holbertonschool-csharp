@@ -34,4 +34,32 @@ public class Player
     {
         Console.WriteLine($"{this.name} has {this.hp} / {this.maxHp} health");
     }
+
+    /// <summary>
+    /// Function to check the damage taken
+    /// </summary>
+    /// <param name="damage"> how many damage the player takes</param>
+    public void TakeDamage(float damage)
+    {
+        if (damage < 0f)
+            damage = 0f;
+        Console.WriteLine($"{this.name} takes {damage} damage!");
+    }
+
+    /// <summary>
+    /// Function to check heal taken
+    /// </summary>
+    /// <param name="heal">How many heal the player takes</param>
+    public void HealDamage(float heal)
+    {
+        if (heal < 0f)
+            heal = 0f;
+        Console.WriteLine($"{this.name} heals {heal} HP!");
+    }
 }
+
+/// <summary>
+/// delegate CalculateHealth that takes a float amount
+/// </summary>
+/// <param name="amount">float amount to be taken</param>
+public delegate void CalculateHealth(float amount);
